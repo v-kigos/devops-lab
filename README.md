@@ -17,7 +17,9 @@ One simple command starts the Lagom development environment and runs:
 2. Change into the new directory and enter the following (all on one line):
 
 ```
-mvn archetype:generate -DarchetypeGroupId=com.lightbend.lagom -DarchetypeArtifactId=maven-archetype-lagom-java -DarchetypeVersion=1.3.4```
+mvn archetype:generate -DarchetypeGroupId=com.lightbend.lagom
+-DarchetypeArtifactId=maven-archetype-lagom-java -DarchetypeVersion=1.3.4
+```
 
 Maven prompts you for:
 
@@ -31,9 +33,11 @@ package — defaults to the same value as the groupId
 5. Change into the top-level project folder and run it:
 
 ```
-mvn lagom:runAll```
+mvn lagom:runAll
+```
 
-The runAll command takes a bit of time. It starts Hello World microservices and registers them in a service directory. It also starts a Cassandra server and a web server.
+The `runAll` command takes a bit of time. It starts Hello World microservices and registers them in a service directory. 
+It also starts a Cassandra server and a web server.
 
 6. When you see the message, `Services started, ...`, verify that the services are indeed up and running by invoking the hello service endpoint from any HTTP client, such as a browser: http://localhost:9000/api/hello/World
 
