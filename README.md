@@ -32,6 +32,26 @@ mvn archetype:generate -DarchetypeGroupId=com.lightbend.lagom
 `package` - defaults to the same value as the groupId
 
 
+```
+Define value for property 'groupId': com.schneeheld
+Define value for property 'artifactId': lagom-lab
+Define value for property 'version' 1.0-SNAPSHOT: : 
+Define value for property 'package' com.schneeheld: : 
+[INFO] Using property: service1ClassName = Hello
+[INFO] Using property: service1Name = hello
+[INFO] Using property: service2ClassName = Stream
+[INFO] Using property: service2Name = stream
+Confirm properties configuration:
+groupId: com.schneeheld
+artifactId: lagom-lab
+version: 1.0-SNAPSHOT
+package: com.schneeheld
+service1ClassName: Hello
+service1Name: hello
+service2ClassName: Stream
+service2Name: stream
+```
+
 4. Enter Y to accept the values. Maven creates the project.
 
 5. Change into the top-level project folder and run it:
