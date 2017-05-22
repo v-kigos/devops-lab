@@ -21,12 +21,12 @@ mvn archetype:generate -DarchetypeGroupId=com.lightbend.lagom
 -DarchetypeArtifactId=maven-archetype-lagom-java -DarchetypeVersion=1.3.4
 ```
 
-Maven prompts you for:
+3. Maven prompts you for:
 
-groupId — typically something like com.example.
-artifactId — becomes the top-level folder name, for example, my-first-project.
-version — the version for your project, press Enter to accept the default.
-package — defaults to the same value as the groupId
+`groupId` - typically something like com.example.
+`artifactId` - becomes the top-level folder name, for example, my-first-project.
+`version` - the version for your project, press Enter to accept the default.
+`package` - defaults to the same value as the groupId
 
 4. Enter Y to accept the values. Maven creates the project.
 
@@ -39,6 +39,8 @@ mvn lagom:runAll
 The `runAll` command takes a bit of time. It starts Hello World microservices and registers them in a service directory. 
 It also starts a Cassandra server and a web server.
 
-6. When you see the message, `Services started, ...`, verify that the services are indeed up and running by invoking the hello service endpoint from any HTTP client, such as a browser: http://localhost:9000/api/hello/World
+6. When you see the message, `Services started, ...`, 
+verify that the services are indeed up and running by invoking the hello service endpoint from any HTTP client, 
+such as a browser: http://localhost:9000/api/hello/World
 
 The request returns the message Hello, World!.
