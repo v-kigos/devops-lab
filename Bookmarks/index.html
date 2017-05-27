@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
 <title>Bookmarks</title>
+<link rel="stylesheet" href="style.css" />
+<script data-require="angular.js@1.0.x"
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"
+	data-semver="1.0.8"></script>
+<meta charset="UTF-8">
 </head>
 <body>
-
+<body>
+	<div ng-app="Bookmarks" ng-controller="BookmarksCtrl">
+		<div ng-repeat="item in bookmarks">
+			<div ng-repeat="bookmark in item.bookmark">
+				<a href="{{bookmark.url}}" target="_blank">{{bookmark.name}}</a>
+			</div>
+		</div>
+	</div>
+	<script src="app.js"></script>
 </body>
 </html>
